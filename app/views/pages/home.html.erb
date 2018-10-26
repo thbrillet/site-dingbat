@@ -1,2 +1,28 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="main-container-hp">
+  <div class="container-hp-top">
+    <div class="container-prestations">
+      <a href="" class="prestations">Prestations</a>
+    </div>
+    <div class="container-projets">
+      <%= link_to projets_path do %>
+        <span class="projets">Projets</a>
+      <% end %>
+    </div>
+  </div>
+  <div class="container-hp-center">
+    <div class="container-dingbat">
+      <%= image_tag "logo_noir_light", alt: "dingbat strategie e-reputation reseaux sociaux" %>
+    </div>
+  </div>
+  <div class="container-hp-bottom">
+    <div class="container-equipe">
+      <a href="" class="equipe">Equipe</a>
+    </div>
+    <div class="container-homelab">
+      <h2 class="homelab">Homelab & Consulting</h2>
+    </div>
+    <div class="container-contact">
+      <a href="" class="contact">Contact</a>
+    </div>
+  </div>
+</div>

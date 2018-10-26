@@ -1,0 +1,32 @@
+.container-projet-center{
+  flex:1;
+  height: 66%;
+  width: 5000px;
+  display: flex;
+  align-items: top;
+  justify-content: flex-start;
+  z-index:-1;
+  .projet-presentation{
+    width: 500px;
+    .presentation-title h1{
+      margin-top: 20px;
+      padding-left:40px;
+      padding-bottom:20px;
+    }
+    .presentation-description{
+      text-align: justify;
+      text-justify: inter-word;
+    }
+  }
+  .projet-photos{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    .photo{
+      height: 100%;
+      width: 1000px;
+      margin-left: 50px;
+      background-color: green;
+    }
+  }
+}

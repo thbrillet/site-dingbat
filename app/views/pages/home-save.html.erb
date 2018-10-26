@@ -1,0 +1,73 @@
+<div class="main-frame">
+  <div id="inner-frame">
+    <div class="logo fade-in-two" style="opacity:0;">
+      <%= image_tag "logo_noir_light.png", alt: "dingbat ereputation marketing digital", class: "logo-accueil" %>
+    </div>
+    <div class="hello fade-in-one" style="opacity:0;">
+      <h1></h1>
+    </div>
+    <div class="click fade-in-two" style="opacity:0;">
+      <p>click or scroll down to continue</p>
+      <i class="fas fa-angle-down"></i>
+    </div>
+  </div>
+  <div id="inner-frame-two" style="top: 0;">
+    <div class="need-left">
+      <p>Hello, j'ai besoin d'aide pour...</p>
+    </div>
+    <div class="need-center">
+      <div class="offres">
+        <div class="offres-move" style="top: 0px;">
+          <div class="offre" id="offre1">
+            <p><%= @offres[0].name %></p>
+          </div>
+          <div class="offre" id="offre2">
+            <p><%= @offres[1].name %></p>
+          </div>
+          <div class="offre" id="offre3">
+            <p><%= @offres[2].name %></p>
+          </div>
+          <div class="offre" id="offre4">
+            <p><%= @offres[3].name %></p>
+          </div>
+          <div class="offre" id="offre5">
+            <p><%= @offres[4].name %></p>
+          </div>
+        </div>
+        <div class="white">
+          <div class="white-full"></div>
+          <div class="white-med-top"></div>
+          <div class="white-none"></div>
+          <div class="white-med-bottom"></div>
+          <div class="white-full"></div>
+        </div>
+      </div>
+    </div>
+    <div class="need-btns" style="background: linear-gradient(to right bottom, white 50%, #e62a76 50%)">
+      <div id="button-up"><i class="fas fa-angle-up"></i></div>
+      <div id="button-down"><i class="fas fa-angle-down"></i></div>
+    </div>
+    <div class="need-right" id="bg-right" style="background-color: #e62a76;">
+      <div class="offre-descr" id="offre-descr1" style="display: none;">
+        <p><%= @offres[0].description %></p>
+        <div class="btn-offer"><i class="fas fa-angle-right"></i></div>
+      </div>
+      <div class="offre-descr" id="offre-descr2" style="display: none;">
+        <p><%= @offres[1].description %></p>
+        <div class="btn-offer"><i class="fas fa-angle-right"></i></div>
+      </div>
+      <div class="offre-descr" id="offre-descr3" style="display: block;">
+        <p><%= @offres[2].description %></p>
+        <div class="btn-offer"><i class="fas fa-angle-right"></i></div>
+      </div>
+      <div class="offre-descr" id="offre-descr4" style="display: none;">
+        <p><%= @offres[3].description %></p>
+        <div class="btn-offer"><i class="fas fa-angle-right"></i></div>
+      </div>
+      <div class="offre-descr" id="offre-descr5" style="display: none;">
+        <p><%= @offres[4].description %></p>
+        <div class="btn-offer"><i class="fas fa-angle-right"></i></div>
+      </div>
+    </div>
+  </div>
+</div>

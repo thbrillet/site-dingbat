@@ -1,0 +1,50 @@
+<div class="main-container-hp">
+  <div class="container-hp-top">
+    <div class="container-prestations">
+      <a href="" class="prestations">Prestations</a>
+    </div>
+    <div class="container-dingbat-projets">
+      <%= link_to root_path do %>
+        <%= image_tag "logo_noir_light", :style => "width: 250px;padding-top:40px;", alt: "dingbat strategie e-reputation reseaux sociaux" %>
+      <% end %>
+    </div>
+    <div class="container-projets">
+      <%= link_to projets_path do %>
+        <span class="projets">Projets</a>
+      <% end %>
+    </div>
+  </div>
+  <div class="container-projets-center" style="position:relative;left:20vw;transition:1s;">
+    <% @projets.each do |projet| %>
+      <%= link_to projet_path(projet) do %>
+        <div class="container-projet" style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url('<%= image_path projet.photo1 %>')">
+          <div class="container-name">
+            <%= projet.name %>
+          </div>
+          <div class="container-customer">
+            <%= projet.customer %>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+  <div class="container-hp-bottom">
+    <div class="container-equipe">
+      <a href="" class="equipe">Equipe</a>
+    </div>
+    <div class="container-homelab-projets">
+      <div class="projets-arrow-left">
+        <i class="fas fa-arrow-left"></i>
+      </div>
+      <h2 class="homelab">Homelab & Consulting</h2>
+      <div class="projets-arrow-right">
+        <i class="fas fa-arrow-right"></i>
+      </div>
+    </div>
+    <div class="container-contact">
+      <a href="" class="contact">Contact</a>
+    </div>
+  </div>
+</div>
+
+
