@@ -1,28 +1,53 @@
 <div class="main-container-hp">
   <div class="container-hp-top">
-    <div class="container-prestations">
-      <a href="" class="prestations">Prestations</a>
+    <div class="container-prestations color">
+      <%= link_to offres_path do %>
+        <span class="prestations">Prestations</a>
+      <% end %>
     </div>
-    <div class="container-projets">
+    <div class="container-projets color">
       <%= link_to projets_path do %>
         <span class="projets">Projets</a>
       <% end %>
     </div>
   </div>
-  <div class="container-hp-center">
+  <div class="container-hp-center container-center">
     <div class="container-dingbat">
       <%= image_tag "logo_noir_light", alt: "dingbat strategie e-reputation reseaux sociaux" %>
     </div>
   </div>
   <div class="container-hp-bottom">
-    <div class="container-equipe">
-      <a href="" class="equipe">Equipe</a>
+    <div class="container-equipe color">
+      <%= link_to teammates_path do %>
+        <span class="equipe">Equipe</a>
+      <% end %>
     </div>
     <div class="container-homelab">
-      <h2 class="homelab">Homelab & Consulting</h2>
+      <h2 class="homelab">
+        <span class="color-homelab homelab-red">H</span><span class="color-homelab homelab-green">o</span><span class="color-homelab homelab-yellow">m</span><span class="color-homelab homelab-pink">e</span><span class="color-homelab homelab-yellow">l</span><span class="color-homelab homelab-pink">a</span><span class="color-homelab homelab-red">b</span> <span class="color-homelab homelab-pink">&</span> <span class="color-homelab homelab-yellow">C</span><span class="color-homelab homelab-red">o</span><span class="color-homelab homelab-pink">n</span><span class="color-homelab homelab-yellow">s</span><span class="color-homelab homelab-pink">u</span><span class="color-homelab homelab-green">l</span><span class="color-homelab homelab-red">t</span><span class="color-homelab homelab-yellow">i</span><span class="color-homelab homelab-red">n</span><span class="color-homelab homelab-green">g</span>
+      </h2>
     </div>
-    <div class="container-contact">
-      <a href="" class="contact">Contact</a>
+    <div class="container-contact color">
+      <%= link_to new_message_path do %>
+        <span class="contact">Contact</a>
+      <% end %>
+    </div>
+  </div>
+  <div class="text-homepage-container">
+    <span class="click-to-see">Cliquez pour découvrir le concept</span>
+    <div class="text-homepage">
+      <h3>Marque et e-réputation : le homelab du Dingbat au coeur des stratégies performantes !</h3>
+      <p>L'e-réputation et la stratégie de marque constituent les deux fers de lance de l'activité du Dingbat. L'e-réputation  bénéficiant de l'ensemble du travail effectué en profondeur grâce à la stratégie de marque pilotée par nos spécialistes du marketing. Le tout au service de la croissance et du développement de votre activité, de votre entreprise.</p>
+      <p>Quand on sait que désormais l'e-réputation produit la plus grande partie de l'identité des marques, on comprend mieux l'efficacité, la pertinence et l'originalité de la démarche de notre homelab pour asseoir votre notoriété et booster votre réussite commerciale.</p>
+      <p>Afin de mener à bien l'ensemble de ses missions au service de votre marque et de sa e-réputation, le Dingbat, microstructure agile et réactive, a su fédérer les talents experts les plus brillants. Et le homelab devient même volontiers incubateur d'entreprises suivant la teneur des projets...</p>
+      <p>Afin de vous donner entière satisfaction online et off line, le Dingbat s'appuie sur la somme des compétences les plus pointues du marketing, de l'économie numérique et de la communication.</p>
+      <ul>
+        <li>Audit, recommandations et suivi opérationnel de la stratégie de marque,</li>
+        <li>Conseil et stratégie en e-réputation,</li>
+        <li>Création des supports print et digitaux (site internet, pages dédiées sur les réseaux sociaux préconisés, brochures, plaquettes, etc.),</li>
+        <li>Créations des contenus de marque (vidéos et tutoriels, articles, livres blancs, MÈME, etc.),</li>
+        <li>Déploiement des leviers indispensables à la visibilité sur le web : hébergement personnalisé et sécurisé, SEO (référencement naturel ou Search Engine Optimization), SMO (gestion des réseaux sociaux ou Social Media Optimization), SEA(Optimisation de l'achat d'espace publicitaire online ou Search Engine Advertising), …</li>
+      </ul>
     </div>
   </div>
 </div>

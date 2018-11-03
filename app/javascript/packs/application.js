@@ -1,6 +1,13 @@
 import "bootstrap";
-import { ProjetsMove } from "../components/projets";
-import { ProjetMove } from "../components/projet";
+import { Projets } from "../components/projets";
+import { Projet } from "../components/projet";
+import { Offres } from "../components/offres";
+import "../components/radio";
+import { TextHp } from "../components/textHp";
+import { Teammates } from "../components/teammates";
 
-ProjetsMove();
-ProjetMove();
+Projets();
+Projet();
+Offres();
+TextHp();
+Teammates();

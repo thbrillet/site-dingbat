@@ -1,0 +1,32 @@
+.homelab-red{
+  color: black;
+    transition: 5s ease-out;
+  &:hover{
+    color: rgba(229,31,35,0.8);
+    transition: 0s ease-out;
+  }
+}
+.homelab-green{
+  color: black;
+    transition: 5s ease-out;
+  &:hover{
+    color: rgba(94,189,170,0.8);
+    transition: 0.1s ease-out;
+  }
+}
+.homelab-yellow{
+  color: black;
+    transition: 5s ease-out;
+  &:hover{
+    color: rgba(242,140,11,0.8);
+    transition: 0.1s ease-out;
+  }
+}
+.homelab-pink{
+  color: black;
+    transition: 5s ease-out;
+  &:hover{
+    color: rgba(231,33,122,0.8);
+    transition: 0.1s ease-out;
+  }
+}

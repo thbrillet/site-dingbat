@@ -4,11 +4,13 @@
 }
 
 .container-projets-center{
-  width: 3870px;
-  height: 66%;
+  width: auto;
+  padding-left: 20vw;
+  height: 60%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: top;
+  justify-content: flex-start;
+  padding-top: 2%;
 }
 
 .container-projet{
@@ -46,6 +48,7 @@
 
 .container-homelab-projets{
   margin-bottom: 40px;
+  z-index:10;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -54,6 +57,30 @@
     font-size: 24px;
   }
 }
-.projets-arrow-left, .projets-arrow-right{
+.projets-arrow-left, .projets-arrow-right, .projet-arrow-left, .projet-arrow-right{
   cursor: pointer;
+}
+
+.filtre-projets{
+  height: 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    input{
+      margin-left: 60px;
+      margin-right: 10px;
+      margin-top: 0;
+      border: none;
+    }
+    label{
+      font-weight: normal;
+    }
+    button{
+      display:none;
+    }
+  }
 }

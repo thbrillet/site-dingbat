@@ -1,9 +1,9 @@
 class PagesController < ApplicationController
   def home
     @offres = Offre.all
+    @projets = Projet.all
   end
 
-  def projets
-    @projets = Projet.all
+  def contact
   end
 end

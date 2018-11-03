@@ -1,0 +1,65 @@
+<div class="main-container-hp">
+  <div class="bandeau-couleur bandeau-couleur-offres" style="left:100vw;"></div>
+  <div class="container-hp-top">
+    <div class="container-prestations color">
+      <a href="" class="prestations">Prestations</a>
+    </div>
+    <div class="container-dingbat-projets">
+      <%= link_to root_path do %>
+        <%= image_tag "logo_noir_light", :style => "width: 250px;padding-top:40px;", alt: "dingbat strategie e-reputation reseaux sociaux" %>
+      <% end %>
+    </div>
+    <div class="container-projets">
+      <%= link_to projets_path do %>
+        <span class="projets">Projets</a>
+      <% end %>
+    </div>
+  </div>
+  <div class="container-hp-hello">
+    <p style="font-size:45px;padding-left:20px;">Hello,</p>
+    <p style="font-size:25px;padding-left:40px;">J'aimerais être acompagné sur...</p>
+  </div>
+
+  <div class="container-offres-center" style="position:relative;left:110vw;transition:1s;width:<%=@offres.length*100%>vw;">
+    <% @offres.each do |offre| %>
+      <div class="offre-container">
+        <div class="offre-texte">
+          <h1 style="margin-top: 0;font-weight:bold;"><%= offre.name %></h1>
+          <p><%= offre.description %></p>
+        </div>
+        <div class="offre-photo">
+          <div class="photo" style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url('<%= image_path offre.photo %>')"></div>
+          <div class="infos-offre">
+            <%= link_to offre_path(offre) do  %>
+              En savoir plus
+            <% end %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="container-hp-bottom">
+    <div class="container-equipe">
+      <%= link_to teammates_path do %>
+        <span class="equipe">Equipe</a>
+      <% end %>
+    </div>
+    <div class="container-homelab-projets">
+      <div class="projets-arrow-left">
+        <i class="fas fa-arrow-left"></i>
+      </div>
+      <h2 class="homelab">Homelab & Consulting</h2>
+      <div class="projets-arrow-right">
+        <i class="fas fa-arrow-right"></i>
+      </div>
+    </div>
+    <div class="container-contact">
+      <%= link_to new_message_path do %>
+        <span class="contact">Contact</a>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+
