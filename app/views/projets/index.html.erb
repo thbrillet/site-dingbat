@@ -8,7 +8,7 @@
     </div>
     <div class="container-dingbat-projets">
       <%= link_to root_path do %>
-        <%= image_tag "logo_noir_light", :style => "width: 250px;padding-top:40px;", alt: "dingbat strategie e-reputation reseaux sociaux" %>
+        <%= image_tag "logo_noir_light", alt: "dingbat strategie e-reputation reseaux sociaux", class: "logo-dingbat-top" %>
       <% end %>
     </div>
     <div class="container-projets color">
@@ -17,57 +17,103 @@
       <% end %>
     </div>
   </div>
-  <div class="filtre-projets">
-    <%= form_tag projets_path, name: 'radioform', method: :get, class: 'filtre-form' do %>
-      <input type="radio" value="" name="name" class="input-filtre"><label>Tout afficher</label>
-      <input type="radio" value="Refonte web" name="name" class="input-filtre"><label>Refonte web</label>
-      <input type="radio" value="Création web" name="name" class="input-filtre"><label>Création web</label>
-      <input type="radio" value="Stratégie Instagram" name="name" class="input-filtre"><label>Stratégie Instagram</label>
-      <%= button_tag type: 'submit', class: "btn-naked" do %>
-        <i class="fas fa-check-circle"></i>
-      <% end %>
-    <% end %>
-  </div>
-  <div class="container-projets-center" style="position:relative;left:110vw;transition:1s;">
-    <% if @projets.empty? %>
-      <p>Aucun projet à afficher :(</p>
-      </div>
-    <% else %>
-      <% @projets.each do |projet| %>
-        <%= link_to projet_path(projet) do %>
-          <div class="container-projet" style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url('<%= image_path projet.photo1 %>')">
-            <div class="container-name">
-              <%= projet.name %>
-            </div>
-            <div class="container-customer">
-              <%= projet.customer %>
-            </div>
-          </div>
+
+  <div class="no-mobile">
+    <div class="filtre-projets">
+      <%= form_tag projets_path, name: 'radioform', method: :get, class: 'filtre-form' do %>
+        <input type="radio" value="" name="name" class="input-filtre" id="all-filter"><label class="label-filter" for="all-filter">Tout afficher</label>
+        <input type="radio" value="Refonte web" name="name" class="input-filtre" id="refonte-web-filter"><label class="label-filter" for="refonte-web-filter">Refonte web</label>
+        <input type="radio" value="Création web" name="name" class="input-filtre" id="creation-web-filter"><label class="label-filter" for="creation-web-filter">Création web</label>
+        <input type="radio" value="Stratégie Instagram" name="name" class="input-filtre" id="stratégie-instagram-filter"><label class="label-filter" for="stratégie-instagram-filter">Stratégie Instagram</label>
+        <%= button_tag type: 'submit', class: "btn-naked" do %>
+          <i class="fas fa-check-circle"></i>
         <% end %>
       <% end %>
-    <% end %>
+    </div>
+    <div class="container-projets-center" style="position:relative;left:110vw;transition:1s;width:<%=@projets.length*110%>vw;">
+      <div class="projets-presentation">
+        <h2>Les références griffées Dingbat : elles donnent envie de franchir les portes du homelab.</h2>
+        <p>Entre le Dingbat et ses clients, des liens tenus et profonds se tissent au fil du temps. Et de part et d'autre, la confiance et la transparence accompagnent tous les échanges, tous les projets, toutes les réussites. Concertation et dialogue constructifs s'avèrent indispensables afin de bien comprendre les problématiques et les attentes qui vous ont conduit à nous. La personnalisation des contacts et des dossiers constitue la règle absolue. Il en va de même pour les solutions proposées.
+Le sens de l'écoute, la culture du conseil et de l'accompagnement rapproché sont également toujours de mise. Entre les murs du homelab, vous vous sentez toujours « comme à la maison ». Quand, ensemble, on y travaille dans une ambiance studieuse mais détendue et que chacun est animé par l'envie de se dépasser pour réussir.</p>
+      </div>
+      <% if @projets.empty? %>
+        <p>Aucun projet à afficher :(</p>
+        </div>
+      <% else %>
+        <% @projets.each do |projet| %>
+          <%= link_to projet_path(projet) do %>
+            <div class="container-projet" style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url('<%= image_path projet.photo1 %>')">
+              <div class="container-name">
+                <%= projet.name %>
+              </div>
+              <div class="container-customer">
+                <%= projet.customer %>
+              </div>
+            </div>
+          <% end %>
+        <% end %>
+      <% end %>
+      <div class="container-back-start">
+        <div class="back-start"><i class="fas fa-angle-double-left"></i></div>
+      </div>
+    </div>
+    <div class="container-hp-bottom">
+      <div class="container-equipe">
+        <%= link_to teammates_path do %>
+          <span class="equipe">Equipe</a>
+        <% end %>
+      </div>
+      <div class="container-homelab-projets">
+        <div class="projets-arrow-left loading-pink" style="color:black">
+          <i class="fas fa-arrow-left"></i>
+        </div>
+        <h2 class="homelab">Homelab & Consulting</h2>
+        <div class="projets-arrow-right loading-pink" style="color:black">
+          <i class="fas fa-arrow-right"></i>
+        </div>
+      </div>
+      <div class="container-contact">
+        <%= link_to new_message_path do %>
+          <span class="contact">Contact</a>
+        <% end %>
+      </div>
+    </div>
   </div>
-  <div class="container-hp-bottom">
-    <div class="container-equipe">
-      <%= link_to teammates_path do %>
-        <span class="equipe">Equipe</a>
+
+  <div class="mobile">
+    <div class="filtre-projets-mobile">
+      <%= form_tag projets_path, name: 'radioform', method: :get, class: 'filtre-form' do %>
+        <input type="radio" value="" name="name" class="input-filtre" id="all-filter"><label class="label-filter" for="all-filter">Tout afficher</label>
+        <input type="radio" value="Refonte web" name="name" class="input-filtre" id="refonte-web-filter"><label class="label-filter" for="refonte-web-filter">Refonte web</label>
+        <input type="radio" value="Création web" name="name" class="input-filtre" id="creation-web-filter"><label class="label-filter" for="creation-web-filter">Création web</label>
+        <input type="radio" value="Stratégie Instagram" name="name" class="input-filtre" id="stratégie-instagram-filter"><label class="label-filter" for="stratégie-instagram-filter">Stratégie Instagram</label>
+        <%= button_tag type: 'submit', class: "btn-naked" do %>
+          <i class="fas fa-check-circle"></i>
+        <% end %>
       <% end %>
     </div>
-    <div class="container-homelab-projets">
-      <div class="projets-arrow-left">
-        <i class="fas fa-arrow-left"></i>
-      </div>
-      <h2 class="homelab">Homelab & Consulting</h2>
-      <div class="projets-arrow-right">
-        <i class="fas fa-arrow-right"></i>
-      </div>
-    </div>
-    <div class="container-contact">
-      <%= link_to new_message_path do %>
-        <span class="contact">Contact</a>
+    <div class="container-projets-center-mobile">
+      <% if @projets.empty? %>
+        <p>Aucun projet à afficher :(</p>
+        </div>
+      <% else %>
+        <% @projets.each do |projet| %>
+          <%= link_to projet_path(projet) do %>
+            <div class="container-projet-mobile" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= image_path projet.photo1 %>')">
+              <div class="container-name">
+                <%= projet.name %>
+              </div>
+              <div class="container-customer">
+                <%= projet.customer %>
+              </div>
+            </div>
+          <% end %>
+        <% end %>
       <% end %>
     </div>
+    <h2 class="homelab text-center" style="font-size:20px;padding-bottom:18px;z-index:800;">Homelab & Consulting</h2>
   </div>
+
 </div>
 
 

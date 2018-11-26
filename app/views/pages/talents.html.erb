@@ -1,0 +1,162 @@
+<div class="main-container-offre">
+  <div class="bandeau-couleur bandeau-couleur-offres" style="left:100vw;"></div>
+  <div class="container-offre-left">
+    <div class="container-prestations color" style="width:173px;">
+      <%= link_to offres_path do %>
+        <span class="prestations">Prestations</span>
+      <% end %>
+    </div>
+    <div class="container-equipe" style="width:122px;">
+      <%= link_to teammates_path do %>
+        <span class="equipe">Equipe</a>
+      <% end %>
+    </div>
+  </div>
+
+
+  <div class="no-mobile" style="width:100%;">
+    <div class="container-offre-center">
+      <div class="container-offre-center-top" style="z-index:999;">
+        <div class="container-dingbat-projets">
+          <%= link_to root_path do %>
+            <%= image_tag "logo_noir_light", alt: "dingbat strategie e-reputation reseaux sociaux", class: "logo-dingbat-top" %>
+          <% end %>
+        </div>
+      </div>
+      <div class="container-offre-center-middle" style="z-index:1;">
+        <div class="container-offre-center-middle-left">
+          <div class="offre-container">
+            <div class="offre-texte">
+              <p style="font-size:45px;">Hello,</p>
+              <p style="font-size:25px;padding-bottom:20px;">J'aimerais être acompagné sur...</p>
+              <h1 style="margin-top: 0;font-weight:bold;">Trouver les bon stalents</h1>
+              <p style="font-size:22px;">Les compétences et les savoir-faire griffés Dingbat : le talent et l'excellence à 360° !</p>
+            </div>
+            <div class="offre-link" style="width:200px;">
+              <div class="infos-offre">
+                <%= link_to new_message_path do  %>
+                  Ca m'intéresse !
+                <% end %>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-offre-center-middle-right-container">
+          <div class="container-offre-center-middle-right" style="top:0vh;">
+            <div class="offre-bloc bloc-1">
+              <div class="photo" style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url('https://media.giphy.com/media/xThuWx4ooOJhE3Gx3y/giphy.gif');"></div>
+            </div>
+            <div class="offre-bloc bloc-2">
+              <div class="bloc-text">
+                <p>Le Dingbat constitue une structure souple et agile dans laquelle les talents les plus variés s'épanouissent au service de l'optimisation de votre marque et de votre e-réputation. Depuis sa création, le homelab a su fédérer les experts les plus pointus de la sphère digitale, du marketing et de la communication en général. Animés par la même envie de vous offrir le meilleur de leur savoir et de leur expérience, ils interviennent pour vous dans la plus totale transparence. Toutes et tous partenaires triés sur le volet du Dingbat, ce dernier possède un droit de regard concernant leurs prestations effectuées pour votre entreprise par notre intermédiaire. </p>
+                <p>Grâce à ces intervenants d'exception, tout au long de notre collaboration, vous bénéficiez de l'ensemble des avantages, de l'agilité et de la souplesse propre aux microstructures. Et dans le même temps, vous profitez des savoir-faire les plus affûtés d'un large éventail de spécialistes de l'économie numérique notamment.</p>
+              </div>
+            </div>
+            <div class="offre-bloc bloc-3">
+              <div class="bloc-text">
+                <h3 style="margin-bottom:40px;">Voici un aperçu des disciplines pratiquées par nos experts dont le talent gravite autour du homelab :</h3>
+                <ul>
+                  <li>marketing,</li>
+                  <li>e-reputation,</li>
+                  <li>création de sites web,</li>
+                  <li>graphisme,</li>
+                  <li>hébergement,</li>
+                  <li>SEO (référencement naturel),</li>
+                  <li>SEA (stratégie publicitaire sur les moteurs de recherche),</li>
+                  <li>SMO (optimisation de la visibilité su rles réseaux sociaux),</li>
+                  <li>communication écrite, etc.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="offre-bloc bloc-4">
+              <div class="bloc-text">
+                <h3 style="margin-bottom:40px;">Vous aimeriez en discuter ?</h3>
+                <p>Contactez-nous via notre formulaire de contact, nous reviendrons très rapidement vers vous !</p>
+                <div class="offre-link" style="width:250px;">
+                  <div class="infos-offre">
+                    <%= link_to new_message_path do  %>
+                      Contactez-nous !
+                    <% end %>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-offre-center-bottom" style="z-index:2;">
+        <div class="container-homelab-projets">
+          <div class="projets-arrow-up loading">
+            <i class="fas fa-arrow-up" style="color:black"></i>
+          </div>
+          <h2 class="homelab text-center" style="margin-bottom:15px;">Homelab & Consulting</h2>
+          <div class="projets-arrow-down loading">
+            <i class="fas fa-arrow-down" style="color:black"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-offre-right" style="width:122px;">
+    <div class="container-projets">
+      <%= link_to projets_path do %>
+        <span class="projets">Projets</span>
+      <% end %>
+    </div>
+    <div class="container-contact" style="width:132px;">
+      <%= link_to new_message_path do %>
+        <span class="contact">Contact</a>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="mobile" style="position:absolute;top:0;">
+     <div class="container-offre-mobile" style="padding-left:20px;padding-right:20px;">
+        <div class="container-dingbat-projets">
+          <%= link_to root_path do %>
+            <%= image_tag "logo_noir_light", alt: "dingbat strategie e-reputation reseaux sociaux", class: "logo-dingbat-top" %>
+          <% end %>
+        </div>
+        <div class="offre-texte">
+          <p style="font-size:45px;padding-top:60px;">Hello,</p>
+          <p style="font-size:25px;padding-bottom:20px;">J'aimerais être acompagné sur...</p>
+          <h1 style="margin-top: 0;font-weight:bold;">Trouver les bon stalents</h1>
+              <p style="font-size:22px;">Les compétences et les savoir-faire griffés Dingbat : le talent et l'excellence à 360° !</p>
+        </div>
+        <div class="photo" style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url('https://media.giphy.com/media/xThuWx4ooOJhE3Gx3y/giphy.gif');"></div>
+        <div class="offre-bloc bloc-2">
+          <div class="bloc-text">
+            <p>Le Dingbat constitue une structure souple et agile dans laquelle les talents les plus variés s'épanouissent au service de l'optimisation de votre marque et de votre e-réputation. Depuis sa création, le homelab a su fédérer les experts les plus pointus de la sphère digitale, du marketing et de la communication en général. Animés par la même envie de vous offrir le meilleur de leur savoir et de leur expérience, ils interviennent pour vous dans la plus totale transparence. Toutes et tous partenaires triés sur le volet du Dingbat, ce dernier possède un droit de regard concernant leurs prestations effectuées pour votre entreprise par notre intermédiaire. </p>
+            <p>Grâce à ces intervenants d'exception, tout au long de notre collaboration, vous bénéficiez de l'ensemble des avantages, de l'agilité et de la souplesse propre aux microstructures. Et dans le même temps, vous profitez des savoir-faire les plus affûtés d'un large éventail de spécialistes de l'économie numérique notamment.</p>
+          </div>
+        </div>
+        <div class="offre-bloc bloc-3">
+          <div class="bloc-text">
+            <h3 style="margin-bottom:40px;">Voici un aperçu des disciplines pratiquées par nos experts dont le talent gravite autour du homelab :</h3>
+            <ul>
+              <li>marketing,</li>
+              <li>e-reputation,</li>
+              <li>création de sites web,</li>
+              <li>graphisme,</li>
+              <li>hébergement,</li>
+              <li>SEO (référencement naturel),</li>
+              <li>SEA (stratégie publicitaire sur les moteurs de recherche),</li>
+              <li>SMO (optimisation de la visibilité su rles réseaux sociaux),</li>
+              <li>communication écrite, etc.</li>
+            </ul>
+          </div>
+          <div class="offre-link" style="width:100%;">
+            <div class="infos-offre">
+              <%= link_to new_message_path do  %>
+                Ca m'intéresse !
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="homelab text-center" style="font-size:20px;padding-bottom:18px;z-index:800;">Homelab & Consulting</h2>
+    </div>
+  </div>
+</div>

@@ -6,7 +6,7 @@
     </div>
     <div class="container-dingbat-projets">
       <%= link_to root_path do %>
-        <%= image_tag "logo_noir_light", :style => "width: 250px;padding-top:40px;", alt: "dingbat strategie e-reputation reseaux sociaux" %>
+        <%= image_tag "logo_noir_light", alt: "dingbat strategie e-reputation reseaux sociaux", class: "logo-dingbat-top" %>
       <% end %>
     </div>
     <div class="container-projets">
@@ -15,51 +15,243 @@
       <% end %>
     </div>
   </div>
-  <div class="container-hp-hello">
-    <p style="font-size:45px;padding-left:20px;">Hello,</p>
-    <p style="font-size:25px;padding-left:40px;">J'aimerais être acompagné sur...</p>
-  </div>
 
-  <div class="container-offres-center" style="position:relative;left:110vw;transition:1s;width:<%=@offres.length*100%>vw;">
-    <% @offres.each do |offre| %>
+  <div class="no-mobile">
+    <div class="container-hp-hello">
+      <p style="font-size:45px;padding-left:20px;">Hello,</p>
+      <p style="font-size:25px;padding-left:40px;">J'aimerais être acompagné sur...</p>
+    </div>
+
+    <div class="container-offres-center" style="position:relative;left:110vw;transition:1s;width:<%=@offres.length*100%>vw;">
       <div class="offre-container">
         <div class="offre-texte">
-          <h1 style="margin-top: 0;font-weight:bold;"><%= offre.name %></h1>
-          <p><%= offre.description %></p>
+          <h1 style="margin-top: 0;font-weight:bold;">Ma e-reputation</h1>
+          <p style="font-size:22px;">Avec le Dingbat et son homelab, les marques au firmament de la e-réputation.</p>
         </div>
         <div class="offre-photo">
-          <div class="photo" style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url('<%= image_path offre.photo %>')"></div>
+          <div class="photo" style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url('https://media.giphy.com/media/eBb2W1OYVHou9l6W7N/giphy.gif');"></div>
           <div class="infos-offre">
-            <%= link_to offre_path(offre) do  %>
+            <%= link_to ereputation_path do  %>
               En savoir plus
             <% end %>
           </div>
         </div>
       </div>
-    <% end %>
+
+      <div class="offre-container">
+        <div class="offre-texte">
+          <h1 style="margin-top: 0;font-weight:bold;">Ma stratégie de marque</h1>
+          <p style="font-size:22px;">La stratégie de marque griffée Dingbat : performances et croissance en haut de l'affiche.</p>
+        </div>
+        <div class="offre-photo">
+          <div class="photo" style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url('https://media.giphy.com/media/cVe1p5BvlRjWw/giphy.gif');"></div>
+          <div class="infos-offre">
+            <%= link_to stratdemarque_path do  %>
+              En savoir plus
+            <% end %>
+          </div>
+        </div>
+      </div>
+
+      <div class="offre-container">
+        <div class="offre-texte">
+          <h1 style="margin-top: 0;font-weight:bold;">Trouver les bons talents</h1>
+          <p style="font-size:22px;">Les compétences et les savoir-faire griffés Dingbat : le talent et l'excellence à 360° !</p>
+        </div>
+        <div class="offre-photo">
+          <div class="photo" style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url('https://media.giphy.com/media/xThuWx4ooOJhE3Gx3y/giphy.gif');"></div>
+          <div class="infos-offre">
+            <%= link_to talents_path do  %>
+              En savoir plus
+            <% end %>
+          </div>
+        </div>
+      </div>
+
+      <div class="offre-container">
+        <div class="offre-texte">
+          <h1 style="margin-top: 0;font-weight:bold;">Mes contenus de marque</h1>
+          <p style="font-size:22px;">Les contenus griffés Dingbat : la signature des marques qui gagnent !</p>
+        </div>
+        <div class="offre-photo">
+          <div class="photo" style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url('https://media.giphy.com/media/A7rTdPxXP9fqM/giphy.gif');"></div>
+          <div class="infos-offre">
+            <%= link_to contenus_path do  %>
+              En savoir plus
+            <% end %>
+          </div>
+        </div>
+      </div>
+
+      <div class="offre-container">
+        <div class="offre-texte">
+          <h1 style="margin-top: 0;font-weight:bold;">Mes print</h1>
+          <p style="font-size:22px;">Communication print griffée Dingbat ? Prospects et clients sont dans vos « petits papiers » !</p>
+        </div>
+        <div class="offre-photo">
+          <div class="photo" style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url('https://media.giphy.com/media/l0HlvfjnbbwsmKXh6/giphy.gif');"></div>
+          <div class="infos-offre">
+            <%= link_to print_path do  %>
+              En savoir plus
+            <% end %>
+          </div>
+        </div>
+      </div>
+
+      <div class="offre-container">
+        <div class="offre-texte">
+          <h1 style="margin-top: 0;font-weight:bold;">Incuber mon entreprise</h1>
+          <p style="font-size:22px;">L'incubation d'entreprises griffée Dingbat : votre alliée dans les starting blocks !</p>
+        </div>
+        <div class="offre-photo">
+          <div class="photo" style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url('https://media.giphy.com/media/lOogiJH1y9mYE/giphy.gif');"></div>
+          <div class="infos-offre">
+            <%= link_to incuber_path do  %>
+              En savoir plus
+            <% end %>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="container-hp-bottom">
+      <div class="container-equipe">
+        <%= link_to teammates_path do %>
+          <span class="equipe">Equipe</a>
+        <% end %>
+      </div>
+      <div class="container-homelab-projets">
+        <div class="projets-arrow-left loading" style="color:black">
+          <i class="fas fa-arrow-left"></i>
+        </div>
+        <h2 class="homelab">Homelab & Consulting</h2>
+        <div class="projets-arrow-right loading" style="color:black">
+          <i class="fas fa-arrow-right"></i>
+        </div>
+      </div>
+      <div class="container-contact">
+        <%= link_to new_message_path do %>
+          <span class="contact">Contact</a>
+        <% end %>
+      </div>
+    </div>
   </div>
 
-  <div class="container-hp-bottom">
-    <div class="container-equipe">
-      <%= link_to teammates_path do %>
-        <span class="equipe">Equipe</a>
-      <% end %>
+  <div class="mobile">
+    <div class="container-hp-hello-mobile">
+      <p style="font-size:35px;padding:40px 20px 20px 20px;">Hello,</p>
+      <p style="font-size:22px;padding:0px 20px 40px 20px;">J'aimerais être acompagné sur...</p>
     </div>
-    <div class="container-homelab-projets">
-      <div class="projets-arrow-left">
-        <i class="fas fa-arrow-left"></i>
+    <div class="container-offres-center-mobile">
+      <div class="offre-container">
+        <%= link_to ereputation_path do  %>
+        <div class="offre-texte" style="text-decoration:none;color:black;">
+          <h1 style="margin-top: 0;font-weight:bold;">Ma e-reputation</h1>
+          <p style="font-size:22px;">Avec le Dingbat et son homelab, les marques au firmament de la e-réputation.</p>
+        </div>
+        <div class="offre-photo">
+          <div class="photo" style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url('https://media.giphy.com/media/eBb2W1OYVHou9l6W7N/giphy.gif');"></div>
+          <div class="infos-offre" style="margin-bottom:80px;">
+            <%= link_to ereputation_path do  %>
+              En savoir plus
+            <% end %>
+          </div>
+        </div>
+        <% end %>
       </div>
-      <h2 class="homelab">Homelab & Consulting</h2>
-      <div class="projets-arrow-right">
-        <i class="fas fa-arrow-right"></i>
+
+      <div class="offre-container">
+        <%= link_to stratdemarque_path do  %>
+        <div class="offre-texte" style="text-decoration:none;color:black;">
+          <h1 style="margin-top: 0;font-weight:bold;">Ma stratégie de marque</h1>
+          <p style="font-size:22px;">La stratégie de marque griffée Dingbat : performances et croissance en haut de l'affiche.</p>
+        </div>
+        <div class="offre-photo">
+          <div class="photo" style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url('https://media.giphy.com/media/cVe1p5BvlRjWw/giphy.gif');"></div>
+          <div class="infos-offre" style="margin-bottom:80px;">
+            <%= link_to stratdemarque_path do  %>
+              En savoir plus
+            <% end %>
+          </div>
+        </div>
+        <% end %>
+      </div>
+
+      <div class="offre-container">
+        <%= link_to talents_path do  %>
+          <div class="offre-texte" style="text-decoration:none;color:black;">
+            <h1 style="margin-top: 0;font-weight:bold;">Trouver les bons talents</h1>
+            <p style="font-size:22px;">Les compétences et les savoir-faire griffés Dingbat : le talent et l'excellence à 360° !</p>
+          </div>
+          <div class="offre-photo">
+            <div class="photo" style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url('https://media.giphy.com/media/xThuWx4ooOJhE3Gx3y/giphy.gif');"></div>
+            <div class="infos-offre" style="margin-bottom:80px;">
+              <%= link_to talents_path do  %>
+                En savoir plus
+              <% end %>
+            </div>
+          </div>
+        <% end %>
+      </div>
+
+      <div class="offre-container">
+        <%= link_to contenus_path do  %>
+        <div class="offre-texte" style="text-decoration:none;color:black;">
+          <h1 style="margin-top: 0;font-weight:bold;">Mes contenus de marque</h1>
+          <p style="font-size:22px;">Les contenus griffés Dingbat : la signature des marques qui gagnent !</p>
+        </div>
+        <div class="offre-photo">
+          <div class="photo" style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url('https://media.giphy.com/media/A7rTdPxXP9fqM/giphy.gif');"></div>
+          <div class="infos-offre" style="margin-bottom:80px;">
+            <%= link_to contenus_path do  %>
+              En savoir plus
+            <% end %>
+          </div>
+        </div>
+        <% end %>
+      </div>
+
+      <div class="offre-container">
+        <%= link_to print_path do  %>
+        <div class="offre-texte" style="text-decoration:none;color:black;">
+          <h1 style="margin-top: 0;font-weight:bold;">Mes prints</h1>
+          <p style="font-size:22px;">Communication print griffée Dingbat ? Prospects et clients sont dans vos « petits papiers » !</p>
+        </div>
+        <div class="offre-photo">
+          <div class="photo" style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url('https://media.giphy.com/media/l0HlvfjnbbwsmKXh6/giphy.gif');"></div>
+          <div class="infos-offre" style="margin-bottom:80px;">
+            <%= link_to print_path do  %>
+              En savoir plus
+            <% end %>
+          </div>
+        </div>
+        <% end %>
+      </div>
+
+      <div class="offre-container">
+        <%= link_to incuber_path do  %>
+        <div class="offre-texte" style="text-decoration:none;color:black;">
+          <h1 style="margin-top: 0;font-weight:bold;">Incuber mon entreprise</h1>
+          <p style="font-size:22px;">L'incubation d'entreprises griffée Dingbat : votre alliée dans les starting blocks !</p>
+        </div>
+        <div class="offre-photo">
+          <div class="photo" style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url('https://media.giphy.com/media/lOogiJH1y9mYE/giphy.gif');"></div>
+          <div class="infos-offre" style="margin-bottom:80px;">
+            <%= link_to incuber_path do  %>
+              En savoir plus
+            <% end %>
+          </div>
+        </div>
+        <% end %>
       </div>
     </div>
-    <div class="container-contact">
-      <%= link_to new_message_path do %>
-        <span class="contact">Contact</a>
-      <% end %>
-    </div>
+    <h2 class="homelab text-center" style="font-size:20px;padding-bottom:18px;z-index:800;">Homelab & Consulting</h2>
   </div>
 </div>
+
+
+
 
 

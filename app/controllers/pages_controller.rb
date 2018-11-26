@@ -4,6 +4,21 @@ class PagesController < ApplicationController
     @projets = Projet.all
   end
 
-  def contact
+  def ereputation
+  end
+
+  def stratdemarque
+  end
+
+  def talents
+  end
+
+  def contenus
+  end
+
+  def print
+  end
+
+  def incuber
   end
 end

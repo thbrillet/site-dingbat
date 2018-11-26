@@ -1,0 +1,158 @@
+<div class="main-container-offre">
+  <div class="bandeau-couleur bandeau-couleur-offres" style="left:100vw;"></div>
+  <div class="container-offre-left">
+    <div class="container-prestations color" style="width:173px;">
+      <%= link_to offres_path do %>
+        <span class="prestations">Prestations</span>
+      <% end %>
+    </div>
+    <div class="container-equipe" style="width:122px;">
+      <%= link_to teammates_path do %>
+        <span class="equipe">Equipe</a>
+      <% end %>
+    </div>
+  </div>
+
+
+  <div class="no-mobile" style="width:100%;">
+    <div class="container-offre-center">
+      <div class="container-offre-center-top" style="z-index:999;">
+        <div class="container-dingbat-projets">
+          <%= link_to root_path do %>
+            <%= image_tag "logo_noir_light", alt: "dingbat strategie e-reputation reseaux sociaux", class: "logo-dingbat-top" %>
+          <% end %>
+        </div>
+      </div>
+      <div class="container-offre-center-middle" style="z-index:1;">
+        <div class="container-offre-center-middle-left">
+          <div class="offre-container">
+            <div class="offre-texte">
+              <p style="font-size:45px;">Hello,</p>
+              <p style="font-size:25px;padding-bottom:20px;">J'aimerais être acompagné sur...</p>
+              <h1 style="margin-top: 0;font-weight:bold;">Ma stratégie de marque</h1>
+              <p style="font-size:22px;">La stratégie de marque griffée Dingbat : performances et croissance en haut de l'affiche.</p>
+            </div>
+            <div class="offre-link" style="width:200px;">
+              <div class="infos-offre">
+                <%= link_to new_message_path do  %>
+                  Ca m'intéresse !
+                <% end %>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-offre-center-middle-right-container">
+          <div class="container-offre-center-middle-right" style="top:0vh;">
+            <div class="offre-bloc bloc-1">
+              <div class="photo" style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url('https://media.giphy.com/media/cVe1p5BvlRjWw/giphy.gif');"></div>
+            </div>
+            <div class="offre-bloc bloc-2">
+              <div class="bloc-text">
+                <p>Le Dingbat et son homelab abordent l'e-réputation d'un point de vue novateur à haute valeur ajoutée. À savoir la construction ou la stratégie de marque qui permet, exprimée schématiquement, d'établir les contours précis de ce que l'on souhaite véhiculer à travers elle dans des visées marketing. Spécialistes de cette discipline, nos intervenants maîtrisent toutes les techniques associées au branding. À partir de ce parti pris de départ, toutes les actions menées possèdent une profondeur, un solide appui qui va démultiplier leur portée, leur assurer une pérennité indiscutable.</p>
+                <p>En dotant l'entreprise d'une assise, d'une stabilité propre à assurer sa croissance et son développement. Grâce à cet angle d'attaque, quand une marque agit en cohérence avec ses objectifs en mettant en avant ses valeurs initiales, elle se présente sur son marché, forte et dotée d'atouts puissants capables d'installer durablement son leadership. Créant en permanence les liens et les interactions les plus qualitatives avec ses cibles, elle va durablement accroître la pertinence de ses leads, conquérir les prospects les plus qualifiés, instaurer une relation client solide et riche. Et bénéficier d'une connaissance de son environnement économique lui permettant de prendre les décisions stratégiques les plus pertinentes.</p>
+              </div>
+            </div>
+            <div class="offre-bloc bloc-3">
+              <div class="bloc-text">
+                <h3 style="margin-bottom:40px;">Les talents du Dingbat au cœur d'un branding performant, nourri des règles incontournables qui bâtissent les stratégies de marque efficaces :</h3>
+                <ul>
+                  <li>la marque, actrice principale du marketing, représente la tête d'affiche dirigée par l'entreprise, avec pour objectif la réalisation de ses ambitions stratégiques et de ses objectifs,</li>
+                  <li>elle doit se présenter sous son meilleur profil devant le client en amont et à l'instant T de l'achat,</li>
+                  <li>les contenus de marque créés à son intention par le Dingbat vont pleinement servir sa notoriété, sa croissance et sa e-réputation,</li>
+                  <li>la marque n'existant que dans le désir des consommateurs-acteurs ; la réflexion et les investigations menées par notre homelab vont permettre d'identifier précisément les cibles, les communautés d'internautes en adéquation avec ses valeurs fondatrices,</li>
+                  <li>en étroite collaboration avec le Dingbat, la marque et ses acteurs vont structurer le scénario et l'offre-produit capables de rencontrer le désir de son public afin qu'il passe à l'acte d'achat,</li>
+                  <li>la qualité des relations tissées entre elle et ses clients se concrétise par un engagement fort de ces derniers et une franche adhésion à sa philosophie,</li>
+                  <li>pratiquant une empathie constructive à l'égard de ses clients sous la houlette du Dingbat, la marque prospère en maîtrisant la complexité des attentes de ceux-ci et l'évolution de leurs besoins…</li>
+                </ul>
+              </div>
+            </div>
+            <div class="offre-bloc bloc-4">
+              <div class="bloc-text">
+                <h3 style="margin-bottom:40px;">Vous aimeriez en discuter ?</h3>
+                <p>Contactez-nous via notre formulaire de contact, nous reviendrons très rapidement vers vous !</p>
+                <div class="offre-link" style="width:250px;">
+                  <div class="infos-offre">
+                    <%= link_to new_message_path do  %>
+                      Contactez-nous !
+                    <% end %>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-offre-center-bottom" style="z-index:2;">
+        <div class="container-homelab-projets">
+          <div class="projets-arrow-up loading">
+            <i class="fas fa-arrow-up" style="color:black"></i>
+          </div>
+          <h2 class="homelab text-center" style="margin-bottom:15px;">Homelab & Consulting</h2>
+          <div class="projets-arrow-down loading">
+            <i class="fas fa-arrow-down" style="color:black"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-offre-right" style="width:122px;">
+    <div class="container-projets">
+      <%= link_to projets_path do %>
+        <span class="projets">Projets</span>
+      <% end %>
+    </div>
+    <div class="container-contact" style="width:132px;">
+      <%= link_to new_message_path do %>
+        <span class="contact">Contact</a>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="mobile" style="position:absolute;top:0;">
+     <div class="container-offre-mobile" style="padding-left:20px;padding-right:20px;">
+        <div class="container-dingbat-projets">
+          <%= link_to root_path do %>
+            <%= image_tag "logo_noir_light", alt: "dingbat strategie e-reputation reseaux sociaux", class: "logo-dingbat-top" %>
+          <% end %>
+        </div>
+        <div class="offre-texte">
+          <p style="font-size:45px;padding-top:60px;">Hello,</p>
+          <p style="font-size:25px;padding-bottom:20px;">J'aimerais être acompagné sur...</p>
+          <h1 style="margin-top: 0;font-weight:bold;">Ma stratégie de marque</h1>
+          <p style="font-size:22px;">La stratégie de marque griffée Dingbat : performances et croissance en haut de l'affiche.</p>
+        </div>
+        <div class="photo" style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url('https://media.giphy.com/media/cVe1p5BvlRjWw/giphy.gif');"></div>
+        <div class="offre-bloc bloc-2">
+          <div class="bloc-text">
+            <p>Le Dingbat et son homelab abordent l'e-réputation d'un point de vue novateur à haute valeur ajoutée. À savoir la construction ou la stratégie de marque qui permet, exprimée schématiquement, d'établir les contours précis de ce que l'on souhaite véhiculer à travers elle dans des visées marketing. Spécialistes de cette discipline, nos intervenants maîtrisent toutes les techniques associées au branding. À partir de ce parti pris de départ, toutes les actions menées possèdent une profondeur, un solide appui qui va démultiplier leur portée, leur assurer une pérennité indiscutable.</p>
+            <p>En dotant l'entreprise d'une assise, d'une stabilité propre à assurer sa croissance et son développement. Grâce à cet angle d'attaque, quand une marque agit en cohérence avec ses objectifs en mettant en avant ses valeurs initiales, elle se présente sur son marché, forte et dotée d'atouts puissants capables d'installer durablement son leadership. Créant en permanence les liens et les interactions les plus qualitatives avec ses cibles, elle va durablement accroître la pertinence de ses leads, conquérir les prospects les plus qualifiés, instaurer une relation client solide et riche. Et bénéficier d'une connaissance de son environnement économique lui permettant de prendre les décisions stratégiques les plus pertinentes.</p>
+          </div>
+        </div>
+        <div class="offre-bloc bloc-3">
+          <div class="bloc-text">
+            <h3 style="margin-bottom:40px;">Les talents du Dingbat au cœur d'un branding performant, nourri des règles incontournables qui bâtissent les stratégies de marque efficaces :</h3>
+            <ul>
+              <li>la marque, actrice principale du marketing, représente la tête d'affiche dirigée par l'entreprise, avec pour objectif la réalisation de ses ambitions stratégiques et de ses objectifs,</li>
+              <li>elle doit se présenter sous son meilleur profil devant le client en amont et à l'instant T de l'achat,</li>
+              <li>les contenus de marque créés à son intention par le Dingbat vont pleinement servir sa notoriété, sa croissance et sa e-réputation,</li>
+              <li>la marque n'existant que dans le désir des consommateurs-acteurs ; la réflexion et les investigations menées par notre homelab vont permettre d'identifier précisément les cibles, les communautés d'internautes en adéquation avec ses valeurs fondatrices,</li>
+              <li>en étroite collaboration avec le Dingbat, la marque et ses acteurs vont structurer le scénario et l'offre-produit capables de rencontrer le désir de son public afin qu'il passe à l'acte d'achat,</li>
+              <li>la qualité des relations tissées entre elle et ses clients se concrétise par un engagement fort de ces derniers et une franche adhésion à sa philosophie,</li>
+              <li>pratiquant une empathie constructive à l'égard de ses clients sous la houlette du Dingbat, la marque prospère en maîtrisant la complexité des attentes de ceux-ci et l'évolution de leurs besoins…</li>
+            </ul>
+          </div>
+          <div class="offre-link" style="width:100%;">
+            <div class="infos-offre">
+              <%= link_to new_message_path do  %>
+                Ca m'intéresse !
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="homelab text-center" style="font-size:20px;padding-bottom:18px;z-index:800;">Homelab & Consulting</h2>
+    </div>
+  </div>
+</div>

@@ -10,6 +10,28 @@
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
   <body>
+    <div class="burger">
+       <span></span>
+    </div>
+    <div class="menu-mobile" style="left:-100vw;">
+      <div class="menu-mobile-bottom">
+        <%= link_to root_path do %>
+          <span class="prestations">Accueil</span>
+        <% end %>
+        <%= link_to offres_path do %>
+          <span class="prestations">Prestations</span>
+        <% end %>
+        <%= link_to projets_path do %>
+          <span class="projets">Projets</span>
+        <% end %>
+        <%= link_to teammates_path do %>
+          <span class="equipe">Equipe</span>
+        <% end %>
+        <%= link_to new_message_path do %>
+          <span class="contact">Contact</span>
+        <% end %>
+      </div>
+    </div>
     <%= yield %>
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>

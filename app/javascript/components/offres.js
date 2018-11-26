@@ -16,7 +16,7 @@ function OffresMove() {
         containerOffres.style.left = "2vw";
         setTimeout(BackToStart, 200);
       } else {
-        containerOffres.style.left = parseInt(containerOffres.style.left, 10) + 100 + "vw";
+        containerOffres.style.left = parseInt(containerOffres.style.left, 10) + 80 + "vw";
       };
     });
     arrowRight.addEventListener("click", function(event) {
@@ -24,7 +24,7 @@ function OffresMove() {
         containerOffres.style.left = "-402vw";
         setTimeout(BackToEnd, 200);
       } else {
-        containerOffres.style.left = parseInt(containerOffres.style.left, 10) - 100 + "vw";
+        containerOffres.style.left = parseInt(containerOffres.style.left, 10) - 80 + "vw";
       };
     });
   };

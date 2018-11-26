@@ -9,9 +9,9 @@ class MessagesController < ApplicationController
     if @message.valid?
       MessageMailer.contact_me(@message).deliver_now
       redirect_to new_message_url
-      flash[:notice] = "Message received, thanks!"
+      flash[:notice] = "Nous avons bien reçu votre message et reviendrons rapidement vers vous ! :)"
     else
-      flash[:notice] = "There was an error sending your message. Please try again."
+      flash[:notice] = "Mmm... On dirait que ça n'a pas fonctionné ! Merci de rééssayer, si ça ne fonctionne toujours pas, contactez-nous directement sur hello@dingbat.win."
       render :new
     end
   end

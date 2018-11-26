@@ -8,6 +8,7 @@ function ProjetsMove() {
   const arrowLeft = document.querySelector(".projets-arrow-left");
   const arrowRight = document.querySelector(".projets-arrow-right");
   const containerProjets = document.querySelector(".container-projets-center");
+  const backStart = document.querySelector(".back-start");
   if (containerProjets != null) {
     containerProjets.style.left = "0vw";
     arrowLeft.addEventListener("click", function(event) {
@@ -19,12 +20,10 @@ function ProjetsMove() {
       };
     });
     arrowRight.addEventListener("click", function(event) {
-      if (containerProjets.style.left == "-200vw") {
-        containerProjets.style.left = "-202vw";
-        setTimeout(BackToEnd, 200);
-      } else {
-        containerProjets.style.left = parseInt(containerProjets.style.left, 10) - 100 + "vw";
-      };
+      containerProjets.style.left = parseInt(containerProjets.style.left, 10) - 100 + "vw";
+    });
+    backStart.addEventListener("click", function(event) {
+      containerProjets.style.left = "0vw";
     });
   };
 };
@@ -39,3 +38,5 @@ function BackToEnd() {
 };
 
 export { Projets };
+
+

@@ -9,4 +9,11 @@ Rails.application.routes.draw do
   resources :offres, only: [:index, :show]
   get 'contact-me', to: 'messages#new', as: 'new_message'
   post 'contact-me', to: 'messages#create', as: 'create_message'
+
+  get '/ereputation' => 'pages#ereputation'
+  get '/stratdemarque' => 'pages#stratdemarque'
+  get '/talents' => 'pages#talents'
+  get '/contenus' => 'pages#contenus'
+  get '/print' => 'pages#print'
+  get '/incuber' => 'pages#incuber'
 end

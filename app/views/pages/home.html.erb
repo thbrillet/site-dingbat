@@ -1,25 +1,37 @@
+<div class="logo-svg" style="height:100vh;z-index:0;position:absolute;">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <svg width="100%" height="100%">
+      <clippath id="clip" >
+          <circle cx="50" cy="50" r="50" class="a"/>
+      </clippath>
+
+      <image href="https://nsa39.casimages.com/img/2018/11/03/181103022843984331.png" width="33%" height="500px" x="33%" y="17%"   class="one"/>
+
+     <image href="https://nsa39.casimages.com/img/2018/11/03/18110302284450365.png" width="33%" height="500px" x="33%" y="17%" clip-path="url(#clip)"/>
+  </svg>
+</div>
 <div class="main-container-hp">
   <div class="container-hp-top">
     <div class="container-prestations color">
       <%= link_to offres_path do %>
-        <span class="prestations">Prestations</a>
+        <span class="prestations">Prestations</span>
       <% end %>
     </div>
     <div class="container-projets color">
       <%= link_to projets_path do %>
-        <span class="projets">Projets</a>
+        <span class="projets">Projets</span>
       <% end %>
     </div>
   </div>
   <div class="container-hp-center container-center">
     <div class="container-dingbat">
-      <%= image_tag "logo_noir_light", alt: "dingbat strategie e-reputation reseaux sociaux" %>
+      <%= image_tag "logo_noir_light", :style => "width: 450px;padding-bottom:40px;", alt: "dingbat strategie e-reputation reseaux sociaux" %>
     </div>
   </div>
   <div class="container-hp-bottom">
     <div class="container-equipe color">
       <%= link_to teammates_path do %>
-        <span class="equipe">Equipe</a>
+        <span class="equipe">Equipe</span>
       <% end %>
     </div>
     <div class="container-homelab">
@@ -27,27 +39,32 @@
         <span class="color-homelab homelab-red">H</span><span class="color-homelab homelab-green">o</span><span class="color-homelab homelab-yellow">m</span><span class="color-homelab homelab-pink">e</span><span class="color-homelab homelab-yellow">l</span><span class="color-homelab homelab-pink">a</span><span class="color-homelab homelab-red">b</span> <span class="color-homelab homelab-pink">&</span> <span class="color-homelab homelab-yellow">C</span><span class="color-homelab homelab-red">o</span><span class="color-homelab homelab-pink">n</span><span class="color-homelab homelab-yellow">s</span><span class="color-homelab homelab-pink">u</span><span class="color-homelab homelab-green">l</span><span class="color-homelab homelab-red">t</span><span class="color-homelab homelab-yellow">i</span><span class="color-homelab homelab-red">n</span><span class="color-homelab homelab-green">g</span>
       </h2>
     </div>
+
     <div class="container-contact color">
       <%= link_to new_message_path do %>
-        <span class="contact">Contact</a>
+        <span class="contact">Contact</span>
       <% end %>
     </div>
   </div>
   <div class="text-homepage-container">
-    <span class="click-to-see">Cliquez pour découvrir le concept</span>
+    <div class="loading" style="position:relative;right:10vh;bottom:7vh;z-index:999;">
+      <i class="fas fa-question" style="color:black";></i>
+    </div>
     <div class="text-homepage">
+      <p class="text-center hp-discover" style="padding-top:20px;">[Cliquez pour découvrir]</p>
       <h3>Marque et e-réputation : le homelab du Dingbat au coeur des stratégies performantes !</h3>
       <p>L'e-réputation et la stratégie de marque constituent les deux fers de lance de l'activité du Dingbat. L'e-réputation  bénéficiant de l'ensemble du travail effectué en profondeur grâce à la stratégie de marque pilotée par nos spécialistes du marketing. Le tout au service de la croissance et du développement de votre activité, de votre entreprise.</p>
       <p>Quand on sait que désormais l'e-réputation produit la plus grande partie de l'identité des marques, on comprend mieux l'efficacité, la pertinence et l'originalité de la démarche de notre homelab pour asseoir votre notoriété et booster votre réussite commerciale.</p>
       <p>Afin de mener à bien l'ensemble de ses missions au service de votre marque et de sa e-réputation, le Dingbat, microstructure agile et réactive, a su fédérer les talents experts les plus brillants. Et le homelab devient même volontiers incubateur d'entreprises suivant la teneur des projets...</p>
       <p>Afin de vous donner entière satisfaction online et off line, le Dingbat s'appuie sur la somme des compétences les plus pointues du marketing, de l'économie numérique et de la communication.</p>
-      <ul>
-        <li>Audit, recommandations et suivi opérationnel de la stratégie de marque,</li>
-        <li>Conseil et stratégie en e-réputation,</li>
-        <li>Création des supports print et digitaux (site internet, pages dédiées sur les réseaux sociaux préconisés, brochures, plaquettes, etc.),</li>
-        <li>Créations des contenus de marque (vidéos et tutoriels, articles, livres blancs, MÈME, etc.),</li>
-        <li>Déploiement des leviers indispensables à la visibilité sur le web : hébergement personnalisé et sécurisé, SEO (référencement naturel ou Search Engine Optimization), SMO (gestion des réseaux sociaux ou Social Media Optimization), SEA(Optimisation de l'achat d'espace publicitaire online ou Search Engine Advertising), …</li>
-      </ul>
+      <div class="blocs-hp">
+        <div style="width:16%; margin:2%; text-align:center;padding:25px;"><i class="fas fa-desktop"></i><br>Audit, recommandations et suivi opérationnel de la stratégie de marque</div>
+        <div style="width:16%; margin:2%; text-align:center;padding:25px;"><i class="fas fa-desktop"></i><br>Conseil et stratégie en e-réputation</div>
+        <div style="width:16%; margin:2%; text-align:center;padding:25px;"><i class="fas fa-desktop"></i><br>Création des supports print et digitaux <br>(site internet, pages dédiées sur les réseaux sociaux préconisés, brochures, plaquettes, etc.)</div>
+        <div style="width:16%; margin:2%; text-align:center;padding:25px;"><i class="fas fa-desktop"></i><br>Créations des contenus de marque <br>(vidéos et tutoriels, articles, livres blancs, MÈME, etc.)</div>
+        <div style="width:16%; margin:2%; text-align:center;padding:25px;"><i class="fas fa-desktop"></i><br>Déploiement des leviers indispensables à la visibilité sur le web :<br> hébergement personnalisé et sécurisé, SEO*, SMO**, SEA***, …</div>
+      </div>
+      <p style="font-size:14px;font-style:italic;padding-top:30px;">*: Référencement naturel ou Search Engine Optimization <br>**: Gestion des réseaux sociaux ou Social Media Optimization <br>***: Optimisation de l'achat d'espace publicitaire online ou Search Engine Advertising</p>
     </div>
   </div>
 </div>

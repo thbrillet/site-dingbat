@@ -1,2 +1,71 @@
-<h1>Offres#show</h1>
-<p>Find me in app/views/offres/show.html.erb</p>
+<div class="main-container-hp">
+  <div class="bandeau-couleur bandeau-couleur-offres" style="left:100vw;"></div>
+  <div class="container-hp-top">
+    <div class="container-prestations color">
+      <%= link_to offres_path do %>
+        <span class="prestations">Prestations</span>
+      <% end %>
+    </div>
+    <div class="container-dingbat-projets">
+      <%= link_to root_path do %>
+        <%= image_tag "logo_noir_light", alt: "dingbat strategie e-reputation reseaux sociaux", class: "logo-dingbat-top" %>
+      <% end %>
+    </div>
+    <div class="container-projets">
+      <%= link_to projets_path do %>
+        <span class="projets">Projets</span>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="no-mobile">
+      <div class="container-offre-center container-center">
+
+        <div class="container-offre-left">
+          <div class="offre-presentation">
+            <div class="offre-title">
+              <span style="font-weight:bold;"><%= @offre.name.upcase %></span>
+            </div>
+            <div class="offre-description">
+              <p><%= @offre.description %></p>
+            </div>
+          </div>
+          <div class="offre-text1" style="text-align:justify;">
+            <%= @offre.text1 %>
+          </div>
+        </div>
+
+        <div class="container-offre-right">
+          <div class="offre-photo" style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url('<%= image_path @offre.photo %>')">
+          </div>
+          <div class="offre-text2">
+            <%= @offre.text2 %>
+            <div class="offre-link">
+              <div class="infos-offre"">
+                <%= link_to new_message_path do  %>
+                  Ca m'intéresse !
+                <% end %>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="container-hp-bottom">
+            <div class="container-equipe">
+              <%= link_to teammates_path do %>
+                <span class="equipe">Equipe</a>
+              <% end %>
+            </div>
+            <div class="container-homelab-projet">
+              <h2 class="homelab">Homelab & Consulting</h2>
+            </div>
+            <div class="container-contact">
+              <%= link_to new_message_path do %>
+                <span class="contact">Contact</a>
+              <% end %>
+            </div>
+          </div>
+    </div>
+</div>

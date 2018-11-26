@@ -1,0 +1,20 @@
+.bandeau-couleur{
+  height: 20px;
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  z-index: 0;
+  transition:1s;
+}
+.bandeau-couleur-teammates{
+  background-color: $green;
+}
+.bandeau-couleur-projets{
+  background-color: $blue;
+}
+.bandeau-couleur-offres{
+  background-color: $pink;
+}
+.bandeau-couleur-contact{
+  background-color: $yellow;
+}

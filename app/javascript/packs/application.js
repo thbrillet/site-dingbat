@@ -5,9 +5,17 @@ import { Offres } from "../components/offres";
 import "../components/radio";
 import { TextHp } from "../components/textHp";
 import { Teammates } from "../components/teammates";
+import "../components/logo";
+import "../components/burger";
+import { MenuBurger } from "../components/menu-burger";
+import { FormProjet } from "../components/formProjet";
+import { Offre } from "../components/offre";
 
 Projets();
 Projet();
 Offres();
 TextHp();
 Teammates();
+MenuBurger();
+FormProjet() ;
+Offre();

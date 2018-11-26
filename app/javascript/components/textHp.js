@@ -1,10 +1,18 @@
 function TextHp() {
   const BlocText = document.querySelector(".text-homepage-container");
+  const Discover = document.querySelector(".hp-discover");
   if (BlocText != null) {
-    const ClickText = document.querySelector(".click-to-see");
     BlocText.addEventListener("click", function(event) {
       this.classList.toggle('text-homepage-top');
-      ClickText.classList.toggle('hide');
+      if (Discover.innerHTML == "[Cliquez pour découvrir]") {
+        Discover.innerHTML = "[Cliquez pour masquer]";
+      } else if (Discover.innerHTML == "[Cliquez pour masquer]") {
+        Discover.innerHTML = "[Cliquez pour découvrir]";
+      } else if (Discover.innerHTML == "[Touchez pour découvrir]") {
+        Discover.innerHTML = "[Touchez pour masquer]";
+      } else if (Discover.innerHTML == "[Touchez pour masquer]") {
+        Discover.innerHTML = "[Touchez pour découvrir]";
+      }
     });
   }
 };

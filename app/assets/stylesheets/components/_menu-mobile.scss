@@ -1,0 +1,95 @@
+.menu-mobile{
+  display:none;
+}
+
+@media screen and (max-width: 1500px) {
+  .menu-mobile{
+    z-index:998;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    flex-direction:column;
+    position: absolute;
+    top: 2vh;
+    width: 350px;
+    height: 96vh;
+    padding: 2%;
+    transition:.5s;
+    background-color:rgba(30,60,90 ,0.85);
+    border:solid white 1px;
+    a{
+      color:white;
+      text-decoration:none;
+      font-size:20px;
+    }
+    .menu-mobile-top{
+      height:20%;
+      justify-content:center;
+      align-items:center;
+    }
+    .menu-mobile-bottom{
+      flex:1;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-around;
+      align-items:center;
+    }
+  }
+  $color: #000000;
+  $size: 32px;
+  $weight: 4px;
+  $speed: 0.33s;
+  $easing: cubic-bezier(1,.22,.35,1.4); // http://cubic-bezier.com/#1,.22,.35,1.4
+  $effect: 135deg; // Choose either 45deg, 135deg, 225deg or 315deg for different effects
+  .burger {
+    height: calc(#{$size} - #{$weight});
+    width: $size;
+    position: absolute;
+    span,
+    &::after,
+    &::before {
+      display: block;
+      width: 100%;
+      height: $weight;
+      background: black;
+      position: absolute;
+      transition: $speed $easing;
+    }
+    &::after {
+      background: black;
+    }
+    &::before {
+      background: black;
+    }
+
+    span {
+      top: calc((#{$size} - #{$weight} * 2) / 2);
+    }
+
+    &:before {
+      content: "";
+      top: 0;
+    }
+
+    &:after {
+      content: "";
+      top: calc(#{$size} - (#{$weight * 2}));
+    }
+
+    &.--is-active {
+      &:after,
+      &:before {
+        top: calc((#{$size} - #{$weight} * 2) / 2);
+      }
+      &:after {
+        transform: rotate($effect);
+      }
+      &:before {
+        transform: rotate(-$effect);
+      }
+      span {
+        width: 0;
+      }
+    }
+  }
+}

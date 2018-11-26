@@ -4,27 +4,9 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  padding-left:20vw;
   .container-customer{
-    color: rgba(94,189,170,0.5);
+    color: $green;
   }
 }
-.bandeau-couleur{
-  height: 20px;
-  width: 100%;
-  position: absolute;
-  bottom: 20px;
-  z-index: 0;
-  transition:1s;
-}
-.bandeau-couleur-teammates{
-  background-color: rgba(94,189,170,0.5);
-}
-.bandeau-couleur-projets{
-  background-color: rgba(231,33,122,0.5);
-}
-.bandeau-couleur-offres{
-  background-color: rgba(229,31,35,0.5);
-}
-.bandeau-couleur-contact{
-  background-color: rgba(242,140,11,0.5);
-}
+
