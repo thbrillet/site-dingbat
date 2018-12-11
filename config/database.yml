@@ -83,3 +83,5 @@ production:
   database: site-dingbat_production
   username: site-dingbat
   password: <%= ENV['SITE-DINGBAT_DATABASE_PASSWORD'] %>
+  url: <%= ENV['POSTGRESQL_ADDON_URI'] %>
+
