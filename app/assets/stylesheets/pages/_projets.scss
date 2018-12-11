@@ -37,6 +37,17 @@
     transition:.3s;
     filter: grayscale(0%);
   }
+  &:hover .black-filter-projet{
+    background:linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1));
+    transition:.3s;
+  }
+  .black-filter-projet{
+    position:absolute;
+    top:0;left:0;
+    width:100%;height:100%;
+    background:linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.6));
+    transition:.3s;
+  }
   .container-customer{
     position: absolute;
     bottom: -50px;
@@ -53,6 +64,7 @@
     left: 10px;
     font-size: 22px;
     color: white;
+    width:90%;
   }
 }
 
@@ -95,6 +107,7 @@
   display:none;
 }
 .label-filter{
+  display:none;
   margin-left:40px;
   margin-right:40px;
   text-align:center;

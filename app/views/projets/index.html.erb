@@ -22,9 +22,9 @@
     <div class="filtre-projets">
       <%= form_tag projets_path, name: 'radioform', method: :get, class: 'filtre-form' do %>
         <input type="radio" value="" name="name" class="input-filtre" id="all-filter"><label class="label-filter" for="all-filter">Tout afficher</label>
-        <input type="radio" value="Refonte web" name="name" class="input-filtre" id="refonte-web-filter"><label class="label-filter" for="refonte-web-filter">Refonte web</label>
-        <input type="radio" value="Création web" name="name" class="input-filtre" id="creation-web-filter"><label class="label-filter" for="creation-web-filter">Création web</label>
-        <input type="radio" value="Stratégie Instagram" name="name" class="input-filtre" id="stratégie-instagram-filter"><label class="label-filter" for="stratégie-instagram-filter">Stratégie Instagram</label>
+        <input type="radio" value="Refonte web" name="name" class="input-filtre" id="refonte-web-filter"><label class="label-filter" for="refonte-web-filter">Stratégie</label>
+        <input type="radio" value="Création web" name="name" class="input-filtre" id="creation-web-filter"><label class="label-filter" for="creation-web-filter">Réseaux Sociaux</label>
+        <input type="radio" value="Stratégie Instagram" name="name" class="input-filtre" id="stratégie-instagram-filter"><label class="label-filter" for="stratégie-instagram-filter">Web</label>
         <%= button_tag type: 'submit', class: "btn-naked" do %>
           <i class="fas fa-check-circle"></i>
         <% end %>
@@ -43,6 +43,7 @@ Le sens de l'écoute, la culture du conseil et de l'accompagnement rapproché so
         <% @projets.each do |projet| %>
           <%= link_to projet_path(projet) do %>
             <div class="container-projet" style="background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url('<%= image_path projet.photo1 %>')">
+              <div class="black-filter-projet"></div>
               <div class="container-name">
                 <%= projet.name %>
               </div>
@@ -99,7 +100,7 @@ Le sens de l'écoute, la culture du conseil et de l'accompagnement rapproché so
       <% else %>
         <% @projets.each do |projet| %>
           <%= link_to projet_path(projet) do %>
-            <div class="container-projet-mobile" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= image_path projet.photo1 %>')">
+            <div class="container-projet-mobile" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('<%= image_path projet.photo1 %>')">
               <div class="container-name">
                 <%= projet.name %>
               </div>

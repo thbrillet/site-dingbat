@@ -9,8 +9,8 @@ class MessageMailer < ApplicationMailer
     @body = "Nouveau message de la part de : '#{message.email}'. Voici le contenu du message : '#{message.body}'"
 
     mail(
-      to:   "thibault@dingbat.win",
-      from: "thibault@dingbat.win",
+      to:   "hello@dingbat.win",
+      from: "hello@dingbat.win",
       delivery_method_options: { api_key: ENV['MAILJET_API_KEY'], secret_key: ENV['MAILJET_SECRET_API'] }
     )
   end

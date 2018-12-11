@@ -26,8 +26,8 @@
 
       <%= f.text_field :name, placeholder: 'Votre nom' %>
       <%= f.email_field :email, placeholder: 'Votre email' %>
-      <%= f.email_field :company, placeholder: 'Votre entreprise' %>
-      <%= f.email_field :prestation, placeholder: 'La prestation qui vous interesse' %>
+      <%= f.text_field :company, placeholder: 'Votre entreprise' %>
+      <%= f.text_field :prestation, placeholder: 'La prestation qui vous interesse' %>
       <%= f.text_area :body, placeholder: 'Et votre message !' %>
       <%= f.submit 'Envoyer', :class => 'submit_btn' %>
     <% end %>
