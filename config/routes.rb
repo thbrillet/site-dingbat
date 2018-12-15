@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'offres/index'
   get 'offres/show'
-  root to: 'pages#home'
+  root to: 'pages#landing'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   get '/contact' => 'pages#contact'
   resources :projets, only: [:index, :show]
@@ -16,4 +16,6 @@ Rails.application.routes.draw do
   get '/contenus' => 'pages#contenus'
   get '/print' => 'pages#print'
   get '/incuber' => 'pages#incuber'
+  get '/landing' => 'pages#landing'
+  get '/home' => 'pages#home'
 end

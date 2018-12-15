@@ -1,0 +1,63 @@
+.landing-main-container{
+  display:flex;align-items:center;justify-content:center;flex-direction:column;
+  height:100vh;width:100%;
+}
+.landing-main-container-top{
+  height:45vh;width:80%;display:flex;align-items:center;justify-content:center;flex-direction:column;
+}
+.landing-main-container-middle, .landing-main-container-bottom{
+  height:25vh;width:80%;display:flex;align-items:center;justify-content:center;flex-direction:column;
+}
+
+.landing-main-container-middle-top{
+  display:flex;align-items:center;justify-content:space-between;
+  width:100%;
+}
+.landing-main-container-middle-bottom{
+  padding-top:60px;
+  a{
+    color:gray;
+  }
+}
+
+.landing-main-container-bottom{
+  margin-top:60px;
+}
+
+.link-landing{
+  text-align: center;
+  width: auto;
+  padding: 33px 20px 7px 20px;
+  margin-top: 20px;
+  box-shadow: inset 0 -20px 0 0 $pink;
+  transition: .3s;
+  a{
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  &:hover{
+    padding: 28px 20px 12px 20px;
+    transition: .3s;
+  }
+}
+
+#code-cadeau{
+    background-color:rgba(0,0,0,0);
+    width:500px;
+    border-top: none; border-left: none; border-right: none;
+    border-bottom: solid 1px black;
+    padding: 20px 20px 0px 0px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+/*-------------------------------------------MOBILE-------------------------------------------*/
+
+@media screen and (max-width: 1500px) {
+
+  .landing-main-container-middle-top{
+    flex-direction:column;
+  }
+
+}

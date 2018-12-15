@@ -1,0 +1,45 @@
+<div class="landing-main-container">
+  <div class="container-offre-center-top">
+    <div class="container-dingbat-projets">
+      <%= link_to home_path do %>
+        <%= image_tag "logo_noir_light.png", alt: "dingbat strategie e-reputation reseaux sociaux", class: "logo-dingbat-top" %>
+      <% end %>
+    </div>
+  </div>
+  <div class="landing-main-container-top text-center">
+    <h1>Hey !</h1>
+    <h2>Vous nous avez trouvé :)</h2>
+  </div>
+  <div class="landing-main-container-middle">
+    <div class="landing-main-container-middle-top">
+      <div class="link-landing">
+        <%= link_to home_path do %>
+          <span>Facile, j'avais la carte de visite !</span>
+        <% end %>
+      </div>
+      <div class="link-landing">
+        <%= link_to home_path do %>
+          <span>J'ai juste cherché sur Google !</span>
+        <% end %>
+      </div>
+      <div class="link-landing">
+        <%= link_to home_path do %>
+          <span>Je vous ai repéré sur Facebook ;)</span>
+        <% end %>
+      </div>
+    </div>
+    <div class="landing-main-container-middle-bottom">
+        <%= link_to home_path do %>
+          <span class="projets"><i class="fas fa-sign-in-alt" style="padding-right:5px;font-size:22px;"></i> Conduisez-moi sur le site</span>
+        <% end %>
+    </div>
+  </div>
+  <div class="landing-main-container-bottom">
+    <div class="container-contact-center">
+      <form action="">
+        <input id="code-cadeau" type="text" placeholder="Code cadeau (tapez le code puis appuyez sur 'Entrée')">
+        <input type="submit" value="Valider" onclick="alert('Ce code est invalide ! :(')" style="display:none;">
+      </form>
+    </div>
+  </div>
+</div>

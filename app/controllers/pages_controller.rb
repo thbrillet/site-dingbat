@@ -21,4 +21,7 @@ class PagesController < ApplicationController
 
   def incuber
   end
+
+  def landing
+  end
 end

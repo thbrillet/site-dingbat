@@ -6,7 +6,7 @@ class MessageMailer < ApplicationMailer
   #   en.message_mailer.contact_me.subject
   #
   def contact_me(message)
-    @body = "Nouveau message de la part de : '#{message.email}'. Voici le contenu du message : '#{message.body}'"
+    @body = "Nouveau message de la part de : NOM : '#{message.name}', EMAIL : '#{message.email}', ENTREPRISE : '#{message.company}', INTERESSE PAR : '#{message.prestation}'. Voici le contenu du message : '#{message.body}'"
 
     mail(
       to:   "hello@dingbat.win",
